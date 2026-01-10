@@ -6,15 +6,17 @@
   <link rel="stylesheet" href="font-awesome.min.css">
 </head>
 <body>
-  <div id="player" style="width: 800px; height: 600px; background-color: black;">
-    <div class="js-video-container" style="width: 100%; height: 97%"></div>
+  <div id="player" style="width: 800px; height: 600px;">
+    <div class="js-video-container" style="width: 100%; height: 100%"></div>
     
-    <button style="border-style: none; cursor: pointer; background-color: transparent;">
-      <i style="color: white;" class="fa fa-play" aria-hidden="true"></i>
-    </button>
-    <button style="border-style: none; cursor: pointer; background-color: transparent;">
-      <i style="color: white;" class="fa fa-pause" aria-hidden="true"></i>
-    </button>
+    <div style="display: flex; background-color: black; height: 4%;">
+      <button style="border-style: none; cursor: pointer; background-color: transparent; width: 3%; display: flex; align-items: center; justify-content: center;">
+        <i style="color: white;" class="fa fa-play" aria-hidden="true"></i>
+      </button>
+      <button style="border-style: none; cursor: pointer; background-color: transparent; width: 3%; display: flex; align-items: center; justify-content: center;">
+        <i style="color: white;" class="fa fa-pause" aria-hidden="true"></i>
+      </button>
+    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
