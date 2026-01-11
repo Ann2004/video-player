@@ -24,7 +24,7 @@
       cursor: pointer; 
       background-color: transparent; 
     }
-    .player .play-pause-icon{
+    .player .button-icon{
       color: white;
     }
   </style>
@@ -35,10 +35,16 @@
     
     <div class="bottom-controls">
       <button class="js-play-button player-button">
-        <i class="fa fa-play play-pause-icon" aria-hidden="true"></i>
+        <i class="fa fa-play button-icon" aria-hidden="true"></i>
       </button>
       <button class="js-pause-button player-button" hidden>
-        <i class="fa fa-pause play-pause-icon" aria-hidden="true"></i>
+        <i class="fa fa-pause button-icon" aria-hidden="true"></i>
+      </button>
+      <button class="js-volume-button player-button">
+        <i class="fa fa-volume-up button-icon" aria-hidden="true"></i>
+      </button>
+      <button class="js-mute-button player-button" hidden>
+        <i class="fa fa-volume-off button-icon" aria-hidden="true"></i>
       </button>
     </div>
 
