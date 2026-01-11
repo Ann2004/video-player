@@ -14,14 +14,15 @@
       flex-direction: column;
     }
     .player .screen {
-      flex-grow: 1
+      flex-grow: 1;
     }
     .player .bottom-controls {
       background-color: black; 
       padding: 5px;
+      display: flex;
     }
     .player .player-button{
-      border-style: none; 
+      border-style: none;
       cursor: pointer; 
       background-color: transparent;
       margin: 5px;
@@ -31,6 +32,9 @@
     .player .button-icon{
       color: white;
       font-size: large;
+    }
+    .player .indent{
+      flex-grow: 1;
     }
   </style>
 </head>
@@ -50,6 +54,12 @@
       </button>
       <button class="js-mute-button player-button" hidden>
         <i class="fa fa-volume-up button-icon" aria-hidden="true"></i>
+      </button>
+
+      <div class="indent"></div>
+
+      <button class="js-fullscreen-button player-button">
+        <i class="fa fa-expand button-icon" aria-hidden="true"></i>
       </button>
     </div>
 
