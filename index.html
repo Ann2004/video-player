@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Пример подключения плеера</title>
+  <title>Видео-плеер</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="font-awesome.min.css">
 </head>
@@ -10,11 +10,11 @@
     <div class="js-video-container" style="width: 100%; height: 100%"></div>
     
     <div style="display: flex; background-color: black; height: 4%;">
-      <button style="border-style: none; cursor: pointer; background-color: transparent; width: 3%; display: flex; align-items: center; justify-content: center;">
-        <i style="color: white;" class="fa fa-play" aria-hidden="true"></i>
+      <button class="js-play-button" style="border-style: none; cursor: pointer; background-color: transparent; width: 3%; position: relative;">
+        <i style="color: white; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" class="fa fa-play" aria-hidden="true"></i>
       </button>
-      <button style="border-style: none; cursor: pointer; background-color: transparent; width: 3%; display: flex; align-items: center; justify-content: center;">
-        <i style="color: white;" class="fa fa-pause" aria-hidden="true"></i>
+      <button class="js-pause-button" hidden="true" style="border-style: none; cursor: pointer; background-color: transparent; width: 3%; position: relative;">
+        <i style="color: white; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" class="fa fa-pause" aria-hidden="true"></i>
       </button>
     </div>
   </div>
