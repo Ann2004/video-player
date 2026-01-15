@@ -19,20 +19,27 @@
     }
     .player .bottom-controls {
       background-color: black; 
-      padding: 5px;
       display: flex;
+      padding-left: 3px;
+      padding-right: 3px;
+      padding-bottom: 1px;
     }
     .player .player-button{
       border-style: none;
       cursor: pointer; 
       background-color: transparent;
-      margin: 5px;
-      height: 30px;
+      height: 40px;
       width: 30px;
+    }
+    .player .player-button.play{
+      margin-right: 7px;
+    }
+    .player .player-button.fullscreen{
+      margin-right: 1px;
     }
     .player .button-icon{
       color: white;
-      font-size: large;
+      font-size: 19.5px
     }
     .player .indent{
       flex-grow: 1;
@@ -44,7 +51,7 @@
     <div class="js-video-container screen"></div>
     
     <div class="bottom-controls">
-      <button class="js-play-button player-button">
+      <button class="js-play-button player-button play">
         <i class="fa fa-play button-icon" aria-hidden="true"></i>
       </button>
       <button class="js-pause-button player-button" hidden>
@@ -59,7 +66,7 @@
 
       <div class="indent"></div>
 
-      <button class="js-fullscreen-button player-button">
+      <button class="js-fullscreen-button player-button fullscreen">
         <i class="fa fa-expand button-icon" aria-hidden="true"></i>
       </button>
     </div>
