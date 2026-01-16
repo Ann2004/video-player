@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="icon" type="image/png" href="css/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <style>
     .player {
@@ -34,8 +37,12 @@
     .player .player-button.play-pause{
       margin-right: 7px;
     }
+    .player .player-button.volume-off-up{
+      margin-right: 5px;
+    }
     .player .player-button.fullscreen{
       margin-right: 1px;
+      margin-left: 3px;
     }
     .player .button-icon{
       color: white;
@@ -43,6 +50,12 @@
     }
     .player .indent{
       flex-grow: 1;
+    }
+    .player .video-timer {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -57,14 +70,16 @@
       <button class="js-pause-button player-button play-pause" hidden>
         <i class="fa fa-pause button-icon" aria-hidden="true"></i>
       </button>
-      <button class="js-volume-button player-button">
+      <button class="js-volume-button player-button volume-off-up">
         <i class="fa fa-volume-off button-icon" aria-hidden="true"></i>
       </button>
-      <button class="js-mute-button player-button" hidden>
+      <button class="js-mute-button player-button volume-off-up" hidden>
         <i class="fa fa-volume-up button-icon" aria-hidden="true"></i>
       </button>
-
+      
+      <span class="js-current-time video-timer"></span>
       <div class="indent"></div>
+      <span class="js-duration video-timer"></span>
 
       <button class="js-fullscreen-button player-button fullscreen">
         <i class="fa fa-expand button-icon" aria-hidden="true"></i>
