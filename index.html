@@ -26,6 +26,8 @@
       padding-left: 3px;
       padding-right: 3px;
       padding-bottom: 1px;
+      justify-content: center;
+      align-items: center;
     }
     .player .player-button{
       border-style: none;
@@ -38,7 +40,7 @@
       margin-right: 7px;
     }
     .player .player-button.volume-off-up{
-      margin-right: 5px;
+      margin-right: 4.5px;
     }
     .player .player-button.fullscreen{
       margin-right: 1px;
@@ -48,14 +50,35 @@
       color: white;
       font-size: 19.5px
     }
-    .player .indent{
+    .player .progress-bar{
       flex-grow: 1;
+      background-color: grey;
+      height: 5px;
+      margin: 0 10px 2px 10px;
+      border-radius: 10px;
+      display: flex;
+    }
+    .player .progress-slider {
+      background-color: red;
+      color: transparent;
+      height: 5px;
+      border-radius: 10px;
     }
     .player .video-timer {
       color: white;
       font-family: "Roboto", sans-serif;
       font-weight: 400;
-      margin-top: 10px;
+      margin-bottom: 1px;
+    }
+    .player .circle {
+      height: 8px;
+      width: 8px;
+      background-color: red;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      margin-top: -5px;
+      margin-left: -5px;
     }
   </style>
 </head>
@@ -78,7 +101,12 @@
       </button>
       
       <span class="js-current-time video-timer"></span>
-      <div class="indent"></div>
+
+      <div class="js-progress progress-bar">
+        <div class="js-progress-slider progress-slider">Progress</div>
+        <span class="circle"></span>
+      </div>
+
       <span class="js-duration video-timer"></span>
 
       <button class="js-fullscreen-button player-button fullscreen">
