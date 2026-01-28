@@ -4,7 +4,7 @@
 
 Сайт расположен [здесь](https://ann2004.github.io/video-player/).
 
-![videoplayer screenshot](screenshots/videoplayer.png)
+![videoplayer screenshot](screenshots/video-player.png)
 
 ## Документация
 
